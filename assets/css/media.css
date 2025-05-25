@@ -1,0 +1,109 @@
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .nav2Main .row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .nav2Main .col {
+    width: auto;
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .nav2Main .btn {
+    padding: 10px 15px;
+  }
+
+  /* Full-screen dropdown styling for mobile */
+  .nav2Main .dropdown-menu {
+    position: fixed; /* Overlay entire screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.95
+    ); /* Semi-transparent background */
+    z-index: 1000;
+    display: none; /* Hide by default */
+    padding-top: 60px; /* Space for the navbar */
+    overflow-y: auto; /* Enable scrolling if needed */
+  }
+
+  /* Show dropdown on button click */
+  .nav2Main .dropdown.show .dropdown-menu {
+    display: block;
+  }
+
+  /* Styling dropdown items for full-screen display */
+  .nav2Main .dropdown-menu .dropdown-item {
+    font-size: 18px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  /* Styling for nested dropdowns within fullscreen menu */
+  .nav2Main .dropdown-submenu .dropdown-menu {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    background: #fff;
+  }
+}
+
+
+/* footer */
+        /* Responsive styles for footer */
+        @media (max-width: 768px) {
+          .footer1-row {
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+          }
+          .footer1-col {
+              flex-basis: 100%;
+              margin-bottom: 15px;
+          }
+          .footer1-form input {
+              width: 65%;
+          }
+      }
+
+      @media (max-width: 480px) {
+          .footer1-col h3 {
+              font-size: 16px;
+              margin-bottom: 15px;
+          }
+          .footer1-form input {
+              width: 60%;
+              font-size: 12px;
+          }
+          .footer1-form button {
+              font-size: 14px;
+          }
+          .footer1-social-icons .fa-brands {
+              width: 30px;
+              height: 30px;
+              line-height: 30px;
+              font-size: 16px;
+              margin-right: 8px;
+              margin-top: 20px;
+          }
+          .footer1-email-id {
+              font-size: 12px;
+          }
+          .footer1-copyright {
+              font-size: 11px;
+          }
+          .footer1-underline{
+              width: 50%;
+              margin-left: 25%;
+          }
+      }

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media.css">
+  <!-- fontawesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- nav1 -->
+
+  <div class="container-fluid py-2 sticky-top bg-white">
+    <div class="row">
+      <div class="col-4 col-md-4">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo1.png" alt="" width="120" height="50" />
+        </a>
+      </div>
+      <div class="col-md-4 justify-content-center d-none d-md-block">
+        <div class="input-group mt-2">
+          <input type="text" class="form-control rounded-0" placeholder="Search" aria-label="Search"
+            aria-describedby="button-addon2" />
+          <button class="btn fw-semibold rounded-0" style="border: 2px solid rgb(222, 226, 230)" type="button"
+            id="button-addon2">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-8 col-md-4 d-flex justify-content-end">
+        <button class="btn bg-danger text-white mt-2 rounded-0">
+          <span><i class="fa-solid fa-user ms-2"></i></span>
+
+          <a href="sign_in.html" style="text-decoration: none; color: white">
+            sign in
+          </a>
+        </button>
+        <a href="cart.html" style="color: black">
+          <button class="btn btn-transperant text-dark rounded-0">
+            <span> <i class="fa-solid fa-cart-shopping mt-3"></i> </span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- navbar2 -->
+  <div class="nav2Main " style="background: rgb(255,0,35);
+  background: linear-gradient(189deg, rgba(255,0,35,1) 8%, rgba(255,72,0,0.874562324929972) 62%, rgba(253,45,45,1) 100%);color: white ;
+   height: 65px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+   margin-bottom: 20px;
+   ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 col-md-2 mb-3 d-flex justify-content-center align-items-center mt-2">
+            <a href="index.html">
+              <button class="btn text-white nav_font" type="button">Home</button>
+            </a>
+          </div>
+          <div class="col-4 col-md-2 mb-3 d-flex justify-content-center align-items-center mt-2">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle text-white nav_font " type="button" data-toggle="dropdown" >
+                Our Products
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="product_page.html">किराणा माल</a>
+                <a class="dropdown-item" href="#"> दुग्धजन्य व बेकरी</a>
+                <a class="dropdown-item" href="#"> घरगुती वस्तू</a>
+                <div class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Categories - वर्ग / श्रेणी</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Sub Option 1</a>
+                    <a class="dropdown-item" href="#">Sub Option 2</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 mb-3 d-flex justify-content-center align-items-center mt-2">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle text-white nav_font" type="button" data-toggle="dropdown">
+                Shop with Us
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="new_arival_page.html">New Arrival</a>
+                <a class="dropdown-item" href="ShopWithUs/OurBestProducts/Products_popular.html">Our Best Products</a>
+                <div class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Options</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Sub Option 1</a>
+                    <a class="dropdown-item" href="#">Sub Option 2</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 mb-3 d-flex justify-content-center align-items-center mt-2">
+            <a href="dicount_page.html">
+              <button class="btn text-white nav_font" type="button">Offers&nbsp;and&nbspDiscounts</button>
+            </a>
+          </div>
+          <div class="col-4 col-md-2 mb-3 d-flex justify-content-center align-items-center mt-2">
+            <a href="Contact_us.html">
+              <button class="btn text-white nav_font" type="button">Contact us</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- product page start -->
+
+   <section class="main-wrap py-5">
+    <div class="container col-12">
+     <a href="cart.html " style="text-decoration: none;"> <button class="collapse-button p-2" onclick="toggleCollapse()">
+       Add to Cart<i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </a>
+
+    <div class="container">
+      <div class="row align-items-start">
+        <!-- Thumbnail Column -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-4 thumbnail-column mb-4 ">
+          <div class="thumbnails d-flex flex-column align-items-center">
+            <img src="assets/images/product3.jpg" class="thumbnail img-fluid mb-2" alt="Thumbnail 1"
+              onclick="changeImage(this)">
+            <img src="assets/images/product.jpg" class="thumbnail img-fluid mb-2" alt="Thumbnail 2"
+              onclick="changeImage(this)">
+            <img src="assets/images/product2.jpg" class="thumbnail img-fluid mb-2" alt="Thumbnail 3"
+              onclick="changeImage(this)">
+            <img src="assets/images/product1.jpg" class="thumbnail img-fluid mb-2" alt="Thumbnail 4"
+              onclick="changeImage(this)">
+          </div>
+        </div>
+
+        <!-- Main Product Image Column -->
+        <div class="col-lg-4 col-md-6 col-sm-8 col-8 mb-4 ">
+          <img src="assets/images/product3.jpg" id="productImg" class="img-fluid shadow main-product-image "
+            alt="Main Product Image">
+        </div>
+
+        <!-- Product Details Column -->
+        <div class="col-lg-5 col-md-12 col-sm-12 product-det">
+          <div class="details">
+            <h3 class="heading">Maggi 2 Minute Masala Noodles, 32g [Pack of 18]</h3>
+
+            <!-- Price Section -->
+            <div class="price-section">
+              <!-- Discount Message -->
+              <span id="discountMessage" class="text-danger font-weight-bold">-7% off</span>
+
+              <!-- Dynamic Price -->
+              <span id="finalPrice" class="font-weight-bold">₹13.00</span>
+              <span id="pricePer100g">(₹18.57 /100g)</span>
+
+              <!-- Original MRP -->
+              <p class="text-muted">M.R.P. : <del id="originalPrice">₹14.00</del></p>
+            </div>
+
+            <hr>
+
+            <p>Use by: 01 MAY 2025</p>
+
+            <!-- Product Details Table -->
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <th scope="row">Brand</th>
+                  <td>Maggi</td>
+                </tr>
+                <tr>
+                  <th scope="row">Item Weight</th>
+                  <td>70 Grams</td>
+                </tr>
+                <tr>
+                  <th scope="row">Diet Type</th>
+                  <td>Vegetarian</td>
+                </tr>
+                <tr>
+                  <th scope="row">Number of Items</th>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <th scope="row">Package Information</th>
+                  <td>Pouch</td>
+                </tr>
+                <tr>
+                  <th scope="row">Flavour</th>
+                  <td>Classic</td>
+                </tr>
+                <tr>
+                  <th scope="row">Package Weight</th>
+                  <td>0.08 Kilograms</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr>
+            <a href="#">Brand: MAGGI</a> <!-- link to product page -->
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid">
+    <footer class="footer1 mt-5">
+      <div class="footer1-row">
+        <div class="footer1-col">
+          <img src="./assets/images/onlinelogomaker-111624-1343-1830-500.jpg" alt="logo"
+            style="height: 90px; width: 200px; border-radius:90px;">
+          <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, modi. Lorem ipsum dolor sit
+            amet hello. Lorem ipsum dolor sit amet. Lorem ipsum isum dolor sit amet consectetur adipisicing elit.
+            Accusamus, sunt.</p>
+        </div>
+        <div class="footer1-col">
+          <h3>Office <div class="footer1-underline"><span></span></div>
+          </h3>
+          <p>A2Z IT Hub</p>
+          <p>Savedi, Ahmednagar</p>
+          <p>PIN 414005, India</p>
+          <p class="footer1-email-id">abcde10@outlook.com</p>
+          <h4>+91-0123456789</h4>
+        </div>
+        <div class="footer1-col">
+          <h3>Links <div class="footer1-underline"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer1-col">
+          <h3>Newsletter <div class="footer1-underline"><span></span></div>
+          </h3>
+          <form class="footer1-form">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="Enter your email id">
+            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+          <div class="footer1-social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+      <hr class="footer1-hr">
+      <p class="footer1-copyright">AtoZ Learning @ 2024 - All Rights Reserved</p>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- custom js  -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product</title>
+
+  <!-- Boostrap  -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="../media.css">
+
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/media.css" type="text/css" />
+
+  <script src="https://kit.fontawesome.com/b88cb3ab7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- nav1 -->
+
+  <div class="container-fluid py-2 sticky-top bg-white">
+    <div class="row">
+      <div class="col-4 col-md-4">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo1.png" alt="" width="120" height="50" />
+        </a>
+      </div>
+      <div class="col-md-4 justify-content-center d-none d-md-block">
+        <div class="input-group mt-2">
+          <input type="text" class="form-control rounded-0" placeholder="Search" aria-label="Search"
+            aria-describedby="button-addon2" />
+          <button class="btn fw-semibold rounded-0" style="border: 2px solid rgb(222, 226, 230)" type="button"
+            id="button-addon2">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-8 col-md-4 d-flex justify-content-end">
+        <button class="btn bg-danger text-white mt-2 rounded-0">
+          <span><i class="fa-solid fa-user ms-2"></i></span>
+
+          <a href="sign_in.html" style="text-decoration: none; color: white">
+            sign in
+          </a>
+        </button>
+        <a href="cart.html" style="color: black">
+          <button class="btn btn-transperant text-dark rounded-0">
+            <span> <i class="fa-solid fa-cart-shopping mt-3"></i> </span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- navbar2 -->
+  <div class="nav2Main " style="background: rgb(255,0,35);
+  background: linear-gradient(189deg, rgba(255,0,35,1) 8%, rgba(255,72,0,0.874562324929972) 62%, rgba(253,45,45,1) 100%);color: white ;
+   height: 65px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+   margin-bottom: 20px;
+   ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 col-md-2 mb-3 d-flex justify-content-center align-items-center mt-2">
+            <a href="index.html">
+              <button class="btn text-white nav_font" type="button">Home</button>
+            </a>
+          </div>
+          <div class="col-4 col-md-2 mb-3 d-flex justify-content-center align-items-center mt-2">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle text-white nav_font " type="button" data-toggle="dropdown" >
+                Our Products
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="product_page.html">किराणा माल</a>
+                <a class="dropdown-item" href="#"> दुग्धजन्य व बेकरी</a>
+                <a class="dropdown-item" href="#"> घरगुती वस्तू</a>
+                <div class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Categories - वर्ग / श्रेणी</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Sub Option 1</a>
+                    <a class="dropdown-item" href="#">Sub Option 2</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 mb-3 d-flex justify-content-center align-items-center mt-2">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle text-white nav_font" type="button" data-toggle="dropdown">
+                Shop with Us
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="new_arival_page.html">New Arrival</a>
+                <a class="dropdown-item" href="ShopWithUs/OurBestProducts/Products_popular.html">Our Best Products</a>
+                <div class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Options</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Sub Option 1</a>
+                    <a class="dropdown-item" href="#">Sub Option 2</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 mb-3 d-flex justify-content-center align-items-center mt-2">
+            <a href="dicount_page.html">
+              <button class="btn text-white nav_font" type="button">Offers&nbsp;and&nbspDiscounts</button>
+            </a>
+          </div>
+          <div class="col-4 col-md-2 mb-3 d-flex justify-content-center align-items-center mt-2">
+            <a href="Contact_us.html">
+              <button class="btn text-white nav_font" type="button">Contact us</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="container ">
+    <div class="row mt-5 ">
+      <!-- Category -->
+
+      <div class="col-md-3 mt-5 mb-5 d-md-block d-none bg-white shadow overflow" id="category" style="position: sticky; top: 100px"  >
+        <div class="col mt-3 heding mb-4">
+          <b>Category</b>
+        </div>
+
+        <!-- Collapsible Sections -->
+        <!-- collapse 1 -->
+        <p>
+          <span data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+            <span class="category_collaps">Biscuits, Drinks & Drin. <i class="fa-solid fa-angle-down"></i></span>
+          </span>
+        </p>
+        <div class="collapse" id="collapse1">
+          <div class="card card-body">
+            <span><a href="product_page.html">Indian Sweets</a></span>
+            <span><a href="product_page.html">Chocolates & Candies</a></span>
+            <span><a href="product_page.html">Chips & Namkeens</a></span>
+          </div>
+        </div>
+        <hr>
+
+        <!-- collapse 2 -->
+        <p>
+          <span data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+            <span class="category_collaps">Biscuits, Drinks & Drin. <i class="fa-solid fa-angle-down"></i></span>
+          </span>
+        </p>
+        <div class="collapse" id="collapse2">
+          <div class="card card-body">
+            <span><a href="product_page.html">Indian Sweets</a></span>
+            <span><a href="product_page.html">Chocolates & Candies</a></span>
+            <span><a href="product_page.html">Chips & Namkeens</a></span>
+          </div>
+        </div>
+        <hr>
+
+        <!-- collapse 3 -->
+        <p>
+          <span data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+            <span class="category_collaps">Biscuits, Drinks & Drin. <i class="fa-solid fa-angle-down"></i></span>
+          </span>
+        </p>
+        <div class="collapse" id="collapse3">
+          <div class="card card-body">
+            <span><a href="product_page.html">Indian Sweets</a></span>
+            <span><a href="product_page.html">Chocolates & Candies</a></span>
+            <span><a href="product_page.html">Chips & Namkeens</a></span>
+          </div>
+        </div>
+        <hr>
+
+        <!-- collapse 4 -->
+        <p>
+          <span data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+            <span class="category_collaps">Biscuits, Drinks & Drin. <i class="fa-solid fa-angle-down"></i></span>
+          </span>
+        </p>
+        <div class="collapse" id="collapse4">
+          <div class="card card-body">
+            <span><a href="product_page.html">Indian Sweets</a></span>
+            <span><a href="product_page.html">Chocolates & Candies</a></span>
+            <span><a href="product_page.html">Chips & Namkeens</a></span>
+          </div>
+        </div>
+        <hr>
+
+        <!-- collapse 5 -->
+        <p>
+          <span data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
+            <span class="category_collaps">Biscuits, Drinks & Drin. <i class="fa-solid fa-angle-down"></i></span>
+          </span>
+        </p>
+        <div class="collapse" id="collapse5">
+          <div class="card card-body">
+            <span><a href="product_page.html">Indian Sweets</a></span>
+            <span><a href="product_page.html">Chocolates & Candies</a></span>
+            <span><a href="product_page.html">Chips & Namkeens</a></span>
+          </div>
+        </div>
+        <hr>
+
+        <!-- collapse 6 -->
+        <p>
+          <span data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapse6">
+            <span class="category_collaps">Biscuits, Drinks & Drin. <i class="fa-solid fa-angle-down"></i></span>
+          </span>
+        </p>
+        <div class="collapse" id="collapse6">
+          <div class="card card-body">
+            <span><a href="product_page.html">Indian Sweets</a></span>
+            <span><a href="product_page.html">Chocolates & Candies</a></span>
+            <span><a href="product_page.html">Chips & Namkeens</a></span>
+          </div>
+        </div>
+        <hr>
+
+        <!-- collapse 7 -->
+        <p>
+          <span data-toggle="collapse" href="#collapse7" role="button" aria-expanded="false" aria-controls="collapse7">
+            <span class="category_collaps">Biscuits, Drinks & Drin. <i class="fa-solid fa-angle-down"></i></span>
+          </span>
+        </p>
+        <div class="collapse" id="collapse7">
+          <div class="card card-body">
+            <span><a href="product_page.html">Indian Sweets</a></span>
+            <span><a href="product_page.html">Chocolates & Candies</a></span>
+            <span><a href="product_page.html">Chips & Namkeens</a></span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- product -->
+      <div class="col-md-9 ">
+        <div class="row p-3">
+          <!-- <span class="short_by"> -->
+          <div class="dropdown  d-md-block d-none">
+
+            <!-- </div> -->
+            </span>
+          </div>
+
+    <div class="col-md-12 text-center mt-3 mb-3 mr-5  ">
+      
+      <p class="d-block d-md-none" >
+        <span id="category_button2" data-toggle="collapse" href="#collapseExample" role="button"
+          aria-expanded="false" aria-controls="collapseExample">
+          &nbsp;&nbsp;&nbsp;&nbsp; Category&nbsp;<i class="fa-solid fa-angle-down"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body" id="categories">
+          <ul>
+            <li><a href="index.html">Biscutes , Drinks packaged...</a></li>
+            <li><a href="index.html"> Colget packaged...</a></li>
+            <li><a href="index.html">Shampo packaged...</a></li>
+            <li><a href="index.html">Oil packaged...</a></li>
+            <li><a href="index.html">Biscutes , Drinks packaged...</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+        </div>
+
+        <!-- category button -->
+
+
+        <!-- cards section start -->
+
+        <div class="row  mt-2  mb-5 ">
+          <!-- card no 1 -->
+
+          <div class="col-12 col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
+
+            <div class="card" style="width:270px; height: 420px;">
+
+              <div class="product-card">
+                <div class="product-image text-center">
+                  <div class="Discount  mb-3 text-left ">
+                    <span id="discount-badge-2"></span>
+                  </div>
+                  <a href="Prod_det1.html">
+
+                    <img id="product-image-2"
+                      src="https://www.jiomart.com/images/product/original/490000363/maggi-2-minute-masala-noodles-70-g-product-images-o490000363-p490000363-0-202305292130.jpg"
+                      alt="Product Image" />
+                  </a>
+                </div>
+
+                <!-- Like Button -->
+                <div class="like-btn">
+                  <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="product-details">
+                  <div class="logo_img">
+                    <img src="assets/images/shiv-shambu-super-market-high-resolution-logo-transparent.png" height="22px"
+                      alt="">
+                  </div>
+                  <div class="product-title">Maggi 2-Minute Noodles ......</div>
+                  <div class="d-flex align-items-center">
+                    <div class="product-price text-dark" id="discounted-price-2">₹ 0.00</div>
+                    <div class="product-original-price"><s id="original-price-2">₹90 </s></div>
+                    <span class="tax_font" s>&nbsp;&nbsp;<small>(include all taxes)</small></span>
+                    <!-- <div class="product-discount text-success">(50% OFF)</div> -->
+                  </div>
+                </div>
+
+                <!-- Quantity Control -->
+                <div class="quantity-control">
+                  <div class="quantity-btn" id="decrease-quantity1">-</div>
+                  <div class="quantity-display" id="quantity-display1">1</div>
+                  <div class="quantity-btn" id="increase-quantity1">+</div>
+                </div>
+
+                <div class="product-actions text-center">
+                  <a href="cart.html">
+                  <!-- <button class="btn btn-success">Buy Now</button> -->
+                  <button class="btn btn-warning " id="product_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to Cart <i
+                      class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </div>
+    
+    </a>          </div>
+            </div>
+
+          </div>
+
+         
+          <!-- Card No 2 -->
+          <div class="col-12 col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
+            <div class="card" style="width:270px; height: 420px;">
+              <div class="product-card">
+                <div class="product-image text-center">
+                  <div class="Discount  mb-3 text-left ">
+                    <span id="discount-badge-6"></span>
+                  </div>
+                  <a href="Prod_det1.html">
+
+                    <img id="product-image-6"
+                      src="https://www.jiomart.com/images/product/original/491264336/britannia-little-hearts-classic-biscuits-75-g-product-images-o491264336-p491264336-0-202407251932.jpg?im=Resize=(360,360)"
+                      alt="Product Image" />
+                  </a>
+                </div>
+
+                <!-- Like Button -->
+                <div class="like-btn">
+                  <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="product-details">
+                  <div class="logo_img">
+                    <img src="assets/images/shiv-shambu-super-market-high-resolution-logo-transparent.png" height="22px"
+                      alt="">
+                  </div>
+                  <div class="product-title">Britannia Little Hearts Classic Biscuits 75 g......</div>
+                  <div class="d-flex align-items-center">
+                    <div class="product-price text-dark" id="discounted-price-6">₹ </div>
+                    <div class="product-original-price"><s id="original-price-6">76</s></div>
+                    <span class="tax_font" s>&nbsp;&nbsp;<small>(include all taxes)</small></span>
+                    <!-- <div class="product-discount text-success">(16% OFF)</div> -->
+                  </div>
+                </div>
+
+                <!-- Quantity Control -->
+                <div class="quantity-control">
+                  <div class="quantity-btn" id="decrease-quantity">-</div>
+                  <div class="quantity-display" id="quantity-display">1</div>
+                  <div class="quantity-btn" id="increase-quantity">+</div>
+                </div>
+
+                <div class="product-actions text-center">
+                  <a href="cart.html">
+                  <!-- <button class="btn btn-success">Buy Now</button> -->
+                  <button class="btn btn-warning " id="product_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to Cart <i
+                      class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </div>
+    
+    </a>          </div>
+            </div>
+          </div>
+
+
+          <!-- card no 3 -->
+          <div class="col-12 col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
+            <div class="card" style="width:270px; height: 420px;">
+
+              <div class="product-card">
+                <div class="product-image text-center">
+                  <div class="Discount  mb-3 text-left ">
+                    <span id="discount-badge-3"></span>
+                  </div>
+                  <a href="Prod_det1.html">
+
+                    <img id="product-image-3"
+                      src="https://www.jiomart.com/images/product/original/490001325/brooke-bond-taj-mahal-tea-500-g-product-images-o490001325-p490001325-0-202308151936.jpg?im=Resize=(1000,1000)"
+                      alt="Product Image" />
+                  </a>
+                </div>
+
+                <!-- Like Button -->
+                <div class="like-btn">
+                  <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="product-details">
+                  <div class="logo_img">
+                    <img src="assets/images/shiv-shambu-super-market-high-resolution-logo-transparent.png" height="22px"
+                      alt="">
+                  </div>
+                  <div class="product-title">SBrooke Bond Taj Mahal ............</div>
+                  <div class="d-flex align-items-center">
+                    <div class="product-price text-dark" id="discounted-price-3">₹ 395.00</div>
+                    <div class="product-original-price"><s id="original-price-3">₹ 410</s></div>
+                    <span class="tax_font" s>&nbsp;&nbsp;<small>(include all taxes)</small></span>
+                    <!-- <div class="product-discount text-success">(16% OFF)</div> -->
+                  </div>
+                </div>
+
+                <!-- Quantity Control -->
+                <div class="quantity-control">
+                  <div class="quantity-btn" id="decrease-quantity">-</div>
+                  <div class="quantity-display" id="quantity-display">1</div>
+                  <div class="quantity-btn" id="increase-quantity">+</div>
+                </div>
+
+                <div class="product-actions text-center">
+                  <a href="cart.html">
+                  <!-- <button class="btn btn-success">Buy Now</button> -->
+                  <button class="btn btn-warning " id="product_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to Cart <i
+                      class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </div>
+    
+    </a>          </div>
+            </div>
+          </div>
+
+
+          <!-- card no 4 -->
+
+          <div class="col-12 col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
+            <div class="card" style="width:270px; height: 420px;">
+              <div class="product-card">
+                <div class="product-image text-center">
+                  <div class="Discount  mb-3 text-left ">
+                    <span id="discount-badge-4"></span>
+                  </div>
+                  <a href="Prod_det1.html">
+
+                    <img id="product-image-4"
+                      src="https://www.jiomart.com/images/product/original/491062305/cadbury-dairy-milk-home-treats-chocolate-minis-119-g-pack-of-17-product-images-o491062305-p491062305-0-202312291214.jpg?im=Resize=(1000,1000)"
+                      alt="Product Image" />
+                  </a>
+                </div>
+
+                <!-- Like Button -->
+                <div class="like-btn">
+                  <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="product-details">
+                  <div class="logo_img">
+                    <img src="assets/images/shiv-shambu-super-market-high-resolution-logo-transparent.png" height="22px"
+                      alt="">
+                  </div>
+                  <div class="product-title">Cadbury Dairy Milk Chocolate..........</div>
+                  <div class="d-flex align-items-center">
+                    <div class="product-price text-dark" id="discounted-price-4">₹ 97.00</div>
+                    <div class="product-original-price"><s id="original-price-4">200</s></div>
+                    <!-- <div class="product-discount text-success">(40% OFF)</div> -->
+                  </div>
+                </div>
+
+                <!-- Quantity Control -->
+                <div class="quantity-control">
+                  <div class="quantity-btn" id="decrease-quantity">-</div>
+                  <div class="quantity-display" id="quantity-display">1</div>
+                  <div class="quantity-btn" id="increase-quantity">+</div>
+                </div>
+
+                <div class="product-actions text-center">
+                  <a href="cart.html">
+                  <!-- <button class="btn btn-success">Buy Now</button> -->
+                  <button class="btn btn-warning " id="product_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to Cart <i
+                      class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </div>
+    
+    </a>          </div>
+            </div>
+          </div>
+
+          <!-- card no 5 -->
+          <div class="col-12 col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
+            <div class="card" style="width:270px; height: 420px;">
+              <div class="product-card">
+                <div class="product-image text-center">
+                  <div class="Discount  mb-3 text-left ">
+                    <span id="discount-badge-5"></span>
+                  </div>
+                  <a href="Prod_det1.html">
+
+                    <img id="product-image-5"
+                      src="https://www.jiomart.com/images/product/original/490005092/red-bull-energy-drink-250-ml-4-pcs-product-images-o490005092-p490005092-0-202311301549.jpg?im=Resize=(360,360)"
+                      alt="Product Image" />
+                  </a>
+                </div>
+
+                <!-- Like Button -->
+                <div class="like-btn">
+                  <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="product-details">
+                  <div class="logo_img">
+                    <img src="assets/images/shiv-shambu-super-market-high-resolution-logo-transparent.png" height="22px"
+                      alt="">
+                  </div>
+                  <div class="product-title">Red Bull Energy Drink (4 pcs) .......... </div>
+                  <div class="d-flex align-items-center">
+                    <div class="product-price text-dark" id="discounted-price-5">₹ 399.00</div>
+                    <div class="product-original-price"><s id="original-price-5">480</s></div>
+                    <span class="tax_font" s>&nbsp;&nbsp;<small>(include all taxes)</small></span>
+                    <!-- <div class="product-discount text-success">(16% OFF)</div> -->
+                  </div>
+                </div>
+
+                <!-- Quantity Control -->
+                <div class="quantity-control">
+                  <div class="quantity-btn" id="decrease-quantity">-</div>
+                  <div class="quantity-display" id="quantity-display">1</div>
+                  <div class="quantity-btn" id="increase-quantity">+</div>
+                </div>
+
+                <div class="product-actions text-center">
+                  <a href="cart.html">
+                  <!-- <button class="btn btn-success">Buy Now</button> -->
+                  <button class="btn btn-warning " id="product_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to Cart <i
+                      class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </div>
+    
+    </a>          </div>
+            </div>
+
+          </div>
+
+          <!-- card no 6 -->
+
+          <div class="col-12 col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
+            <div class="card" style="width:270px; height: 420px;">
+
+              <div class="product-card">
+                <div class="product-image text-center">
+                  <div class="Discount  mb-3 text-left ">
+                    <span id="discount-badge-7"></span>
+                  </div>
+                  <a href="Prod_det1.html">
+
+                    <img id="product-image-7"
+                      src="https://www.jiomart.com/images/product/original/491696356/lay-s-classic-salted-potato-chips-82-g-product-images-o491696356-p590121273-0-202410031824.jpg?im=Resize=(1000,1000)"
+                      alt="Product Image" />
+                  </a>
+                </div>
+
+                <!-- Like Button -->
+                <div class="like-btn">
+                  <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="product-details">
+                  <div class="logo_img">
+                    <img src="assets/images/shiv-shambu-super-market-high-resolution-logo-transparent.png" height="22px"
+                      alt="">
+                  </div>
+                  <div class="product-title">Lay's Classic Salted Potato Chips.</div>
+                  <div class="d-flex align-items-center">
+                    <div class="product-price text-dark" id="discounted-price-7">₹ 43.00</div>
+                    <div class="product-original-price"><s id="original-price-7">60</s></div>
+                    <span class="tax_font" s>&nbsp;&nbsp;<small>(include all taxes)</small></span>
+                    <!-- <div class="product-discount text-success">(28% OFF)</div> -->
+                  </div>
+                </div>
+
+                <!-- Quantity Control -->
+                <div class="quantity-control">
+                  <div class="quantity-btn" id="decrease-quantity">-</div>
+                  <div class="quantity-display" id="quantity-display">1</div>
+                  <div class="quantity-btn" id="increase-quantity">+</div>
+                </div>
+
+                <div class="product-actions text-center">
+                  <a href="cart.html">
+                  <!-- <button class="btn btn-success">Buy Now</button> -->
+                  <button class="btn btn-warning " id="product_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to Cart <i
+                      class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </div>
+    
+    </a>          </div>
+            </div>
+          </div>
+
+          <!-- card no 7 -->
+
+          <div class="col-12 col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
+            <div class="card" style="width:270px; height: 420px;">
+
+              <div class="product-card">
+                <div class="product-image text-center">
+                  <div class="Discount  mb-3 text-left ">
+                    <span id="discount-badge-8"></span>
+                  </div>
+                  <a href="Prod_det1.html">
+
+                    <img id="product-image-8"
+                      src="https://www.jiomart.com/images/product/original/491276476/horlicks-classic-malt-750-g-product-images-o491276476-p491276476-0-202208101817.jpg?im=Resize=(420,420)"
+                      alt="Product Image" />
+                  </a>
+                </div>
+
+                <!-- Like Button -->
+                <div class="like-btn">
+                  <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="product-details">
+                  <div class="logo_img">
+                    <img src="assets/images/shiv-shambu-super-market-high-resolution-logo-transparent.png" height="22px"
+                      alt="">
+                  </div>
+                  <div class="product-title">Lay's Classic Salted Potato Chips.</div>
+                  <div class="d-flex align-items-center">
+                    <div class="product-price text-dark" id="discounted-price-8">₹ 339.00</div>
+                    <div class="product-original-price"><s id="original-price-8">₹ 459</s></div>
+                    <span class="tax_font" s>&nbsp;&nbsp;<small>(include all taxes)</small></span>
+                    <!-- <div class="product-discount text-success">(26% OFF)</div> -->
+                  </div>
+                </div>
+
+                <!-- Quantity Control -->
+                <div class="quantity-control">
+                  <div class="quantity-btn" id="decrease-quantity">-</div>
+                  <div class="quantity-display" id="quantity-display">1</div>
+                  <div class="quantity-btn" id="increase-quantity">+</div>
+                </div>
+
+                <div class="product-actions text-center">
+                  <a href="cart.html">
+                  <!-- <button class="btn btn-success">Buy Now</button> -->
+                  <button class="btn btn-warning " id="product_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to Cart <i
+                      class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </div>
+    
+    </a>          </div>
+            </div>
+          </div>
+
+
+          <!-- card no 8 -->
+          <div class="col-12 col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
+            <div class="card" style="width:270px; height: 420px;">
+
+              <div class="product-card">
+                <div class="product-image text-center">
+                  <div class="Discount  mb-3 text-left ">
+                    <span id="discount-badge-9"></span>
+                  </div>
+                  <a href="Prod_det1.html">
+
+                    <img
+                      src="https://www.jiomart.com/images/product/original/490003831/sunfeast-instant-masala-pasta-treat-70-g-product-images-o490003831-p490003831-0-202406111704.jpg?im=Resize=(420,420)"
+                      alt="Product Image" />
+                  </a>
+                </div>
+
+                <!-- Like Button -->
+                <div class="like-btn">
+                  <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="product-details">
+                  <div class="logo_img">
+                    <img src="assets/images/shiv-shambu-super-market-high-resolution-logo-transparent.png" height="22px"
+                      alt="">
+                  </div>
+                  <div class="product-title">Yippee! Instant Pasta - Masala...</div>
+                  <div class="d-flex align-items-center">
+                    <div class="product-price text-dark" id="discounted-price-9">₹ 21</div>
+                    <div class="product-original-price"><s id="original-price-9">₹ 32</s></div>
+                    <span class="tax_font" s>&nbsp;&nbsp;<small>(include all taxes)</small></span>
+                    <!-- <div class="product-discount text-success">(34% OFF)</div> -->
+                  </div>
+                </div>
+
+                <!-- Quantity Control -->
+                <div class="quantity-control">
+                  <div class="quantity-btn" id="decrease-quantity">-</div>
+                  <div class="quantity-display" id="quantity-display">1</div>
+                  <div class="quantity-btn" id="increase-quantity">+</div>
+                </div>
+
+                <div class="product-actions text-center">
+                  <a href="cart.html">
+                  <!-- <button class="btn btn-success">Buy Now</button> -->
+                  <button class="btn btn-warning " id="product_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to Cart <i
+                      class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </div>
+    
+    </a>          </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <footer class="footer1">
+      <div class="footer1-row">
+          <div class="footer1-col">
+            <img  src="assets/images/onlinelogomaker-102624-1043-2298-500.jpg" alt="logo" style="height: 49px;width: 100px; width: 200px;">
+            <br><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, modi. Lorem ipsum dolor sit amet hello. Lorem ipsum dolor sit amet. Lorem ipsum isum dolor sit amet consectetur adipisicing elit. Accusamus, sunt.</p>
+          </div>
+          <div class="footer1-col">
+              <h3>Office <div class="footer1-underline"><span></span></div></h3>
+              <p>A2Z IT Hub</p>
+              <p>Savedi, Ahmednagar</p>
+              <p>PIN 414005, India</p>
+              <p class="footer1-email-id">abcde10@outlook.com</p>
+              <h4>+91-0123456789</h4>
+          </div>
+          <div class="footer1-col">
+              <h3>Links <div class="footer1-underline"><span></span></div></h3>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact us</a></li>
+              </ul>
+          </div>
+          <div class="footer1-col">
+              <h3>Newsletter <div class="footer1-underline"><span></span></div></h3>
+              <form class="footer1-form">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" placeholder="Enter your email id">
+                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button> 
+              </form>
+              <div class="footer1-social-icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+              </div>
+          </div>
+      </div>
+      <hr class="footer1-hr">
+      <p class="footer1-copyright">AtoZ Learning @ 2024 - All Rights Reserved</p>
+  </footer>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
